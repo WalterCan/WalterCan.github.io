@@ -69,3 +69,18 @@ img {
 .centrar-texto {
   text-align: center;
 }
+
+/* Header */
+
+.header {
+  background-image: url(/Image/pexels-pixabay-270348.jpg);
+  height: 65rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.header__texto {
+  text-align: center;
+  color: var(--blanco);
+  margin-top: 5rem;
+}
