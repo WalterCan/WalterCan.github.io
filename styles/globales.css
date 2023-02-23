@@ -1,3 +1,14 @@
+:root {
+  --fuenteHeading: "PT Sans", sans-serif;
+  --fuenteParrafos: "Open Sans", sans-serif;
+  --primario: #3d5656;
+  --secundario: #fed049;
+  --celesteOscuro: #68b984;
+  --celesteClaro: #cffde1;
+  --blanco: #ffffff;
+  --negro: #000000;
+}
+
 html {
   font-size: 62.5%;
   box-sizing: border-box;
@@ -8,53 +19,53 @@ html {
   box-sizing: inherit;
 }
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: var(--fuenteParrafos);
   font-size: 1.6rem;
+  line-height: 2;
 }
-body::selection {
-  background-color: red;
-  color: black;
-}
-p {
-  font-size: 2rem;
-  color: #000000;
-  margin: 0 auto;
-}
+
+/* Globales */
+
 .contenedor {
-  width: 95%;
   max-width: 120rem;
+  width: 95%;
   margin: 0 auto;
 }
+
 a {
   text-decoration: none;
 }
+
 h1,
 h2,
-h3 {
-  margin: 0 0 5rem 0;
+h3,
+h4 {
+  font-family: var(--fuenteHeading);
 }
 h1 {
-  font-size: 4rem;
+  font-size: 4.8rem;
 }
 h2 {
-  font-size: 3.6rem;
+  font-size: 4rem;
 }
 h3 {
-  font-size: 3rem;
+  font-size: 3.2rem;
+}
+h4 {
+  font-size: 2.8rem;
 }
 img {
   max-width: 100%;
-  width: auto;
-  height: auto;
-  display: block;
-}
-body {
-  background-color: #f8f4ea;
 }
 
-.header {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  align-items: center;
-  justify-content: end;
+/* Utilidades */
+
+.no-margin {
+  margin: 0;
+}
+.no-padding {
+  padding: 0;
+}
+.centrar-texto {
+  text-align: center;
 }
