@@ -304,7 +304,9 @@ img {
   gap: 3rem;
 }
 .imagen__sobremi {
-  background-color: red;
+  background-image: url(/Image/fondo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   max-width: 100%;
   height: 30rem;
 }
