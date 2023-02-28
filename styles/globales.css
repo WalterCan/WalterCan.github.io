@@ -298,11 +298,14 @@ img {
 /*  */
 
 /* Seccion sobre mi */
-.sobremi {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 3rem;
+@media (min-width: 768px) {
+  .sobremi {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+  }
 }
+
 .imagen__sobremi {
   background-image: url(/Image/fondo.jpg);
   background-repeat: no-repeat;
