@@ -26,6 +26,7 @@ html {
 body {
   font-family: var(--fuenteParrafos);
   font-size: 1.6rem;
+  background-color: var(--celesteClaro);
 }
 p {
   font-size: 2rem;
@@ -116,11 +117,7 @@ h3 {
   width: 30rem;
   height: 45rem;
 }
-.header__header:hover {
-  width: 50rem;
-  height: 50rem;
-  transition: all 500ms linear;
-}
+
 /* Titulo y Perfil */
 
 .contenido {
@@ -211,6 +208,8 @@ button:hover:after {
 /* Proyectos */
 .proyectos__titulo {
   margin-top: 10rem;
+  text-align: center;
+  text-transform: uppercase;
 }
 .proyectos__pag {
   width: auto;
@@ -225,6 +224,6 @@ button:hover:after {
 @media (min-width: 768px) {
   .proyectos {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
