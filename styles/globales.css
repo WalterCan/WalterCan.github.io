@@ -138,9 +138,11 @@ h3 {
   margin-top: 4rem;
 }
 /* Experiencia */
-.experiencia {
-  margin-top: 15rem;
-}
+/* .experiencia {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
 
 @media (min-width: 768px) {
   .experiencia {
@@ -206,6 +208,7 @@ button:hover:after {
 }
 
 /* Proyectos */
+
 .proyectos__titulo {
   margin-top: 10rem;
   text-align: center;
@@ -216,11 +219,16 @@ button:hover:after {
   height: 45rem;
 }
 .proyectos__titulo__contenedor {
-  margin-bottom: 5rem;
+  margin-left: 3rem;
 }
+.proyectos__iframe .btn {
+  margin-left: 3rem;
+}
+
 .proyectos__titulo:hover {
   font-size: 5rem;
 }
+
 @media (min-width: 768px) {
   .proyectos {
     display: grid;
@@ -231,56 +239,14 @@ button:hover:after {
 /* Footer */
 .footer {
   background-color: var(--fondoHeader);
-  height: 10rem;
+  height: 15rem;
   width: auto;
-}
-.social-links,
-.flex-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.social-btn {
-  cursor: pointer;
-  height: 5rem;
-  width: 5rem;
-  color: #333;
-  border-radius: 10px;
-  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
-  background: white;
-  margin: 5px;
-  transition: 0.3s;
-  justify-content: center;
-}
-
-.social-btn svg {
-  height: 3rem;
-  width: 3rem;
-}
-
-.social-btn span {
-  width: 0px;
-  overflow: hidden;
-  transition: 0.3s;
+  font-size: 5rem;
+  color: var(--blanco);
   text-align: center;
-  margin-left: 5px;
 }
-
-.social-btn:hover {
-  width: 40rem;
-  border-radius: 5px;
-}
-
-.social-btn:hover span {
-  padding: 2px;
-  width: 80px;
-}
-
-#linkedin svg {
-  fill: #0e76a8;
-}
-
-#github {
-  fill: #333;
+.footer__contacto {
+  display: inline;
+  border-bottom: 1px solid var(--blanco);
+  margin-bottom: 3rem;
 }
