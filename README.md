@@ -1,1 +1,1 @@
-https://cv-cantero-walter.netlify.app/
+https://waltercan.github.io/
